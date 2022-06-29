@@ -23,4 +23,9 @@ defmodule Exmeal.Error do
     :bad_request
     |> build(result)
   end
+
+  def build_meal_not_found_error do
+    "Meal not found"
+    |> build_not_found()
+  end
 end
